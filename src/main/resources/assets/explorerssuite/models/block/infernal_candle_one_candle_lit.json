@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/template_candle",
+  "textures": {
+    "all": "explorerssuite:block/infernal_candle_lit",
+    "particle": "explorerssuite:block/infernal_candle_lit"
+  }
+}

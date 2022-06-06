@@ -1,0 +1,58 @@
+{
+  "itemGroup.explorerssuite.general": "Explorer's Suite",
+
+  "item.explorerssuite.fire_starter": "Fire Starter",
+  "item.explorerssuite.tallow": "Tallow",
+  "item.explorerssuite.sweet_berry_pips": "Sweet Berry Pips",
+  "item.explorerssuite.glow_berry_pips": "Glow Berry Pips",
+
+  "item.minecraft.potion.effect.calming": "Potion of Calming",
+  "item.minecraft.potion.effect.extended_calming": "Potion of Calming",
+  "item.minecraft.potion.effect.enhanced_calming": "Potion of Calming",
+  "item.minecraft.potion.effect.insomnia": "Potion of Restlessness",
+  "item.minecraft.potion.effect.extended_insomnia": "Potion of Restlessness",
+  "item.minecraft.potion.effect.enhanced_insomnia": "Potion of Restlessness",
+
+  "item.minecraft.splash_potion.effect.calming": "Splash Potion of Calming",
+  "item.minecraft.splash_potion.effect.extended_calming": "Splash Potion of Calming",
+  "item.minecraft.splash_potion.effect.enhanced_calming": "Splash Potion of Calming",
+  "item.minecraft.splash_potion.effect.insomnia": "Splash Potion of Restlessness",
+  "item.minecraft.splash_potion.effect.extended_insomnia": "Splash Potion of Restlessness",
+  "item.minecraft.splash_potion.effect.enhanced_insomnia": "Splash Potion of Restlessness",
+
+  "item.minecraft.lingering_potion.effect.calming": "Lingering Potion of Calming",
+  "item.minecraft.lingering_potion.effect.extended_calming": "Lingering Potion of Calming",
+  "item.minecraft.lingering_potion.effect.enhanced_calming": "Lingering Potion of Calming",
+  "item.minecraft.lingering_potion.effect.insomnia": "Lingering Potion of Restlessness",
+  "item.minecraft.lingering_potion.effect.extended_insomnia": "Lingering Potion of Restlessness",
+  "item.minecraft.lingering_potion.effect.enhanced_insomnia": "Lingering Potion of Restlessness",
+
+  "item.minecraft.tipped_arrow.effect.calming": "Arrow of Calming",
+  "item.minecraft.tipped_arrow.effect.extended_calming": "Arrow of Calming",
+  "item.minecraft.tipped_arrow.effect.enhanced_calming": "Arrow of Calming",
+  "item.minecraft.tipped_arrow.effect.insomnia": "Arrow of Restlessness",
+  "item.minecraft.tipped_arrow.effect.extended_insomnia": "Arrow of Restlessness",
+  "item.minecraft.tipped_arrow.effect.enhanced_insomnia": "Arrow of Restlessness",
+
+  "block.explorerssuite.incensed_candle": "Incensed Candle",
+  "block.explorerssuite.infernal_candle": "Infernal Candle",
+
+  "effect.explorerssuite.calming": "Calming",
+  "effect.explorerssuite.insomnia": "Insomnia",
+
+  "text.autoconfig.explorerssuite.title": "Explorers's Suite Options",
+  "text.autoconfig.explorerssuite.option.campfiresPlaceUnlit": "Campfires Place Unlit",
+  "text.autoconfig.explorerssuite.option.campfiresHealPlayers": "Campfires Heal Players",
+  "text.autoconfig.explorerssuite.option.campfiresHealPassives": "Campfires Heal Passives",
+  "text.autoconfig.explorerssuite.option.dropLadders": "Improved Ladder Placement",
+  "text.autoconfig.explorerssuite.option.pigsDropTallow": "Pigs Drop Tallow",
+  "text.autoconfig.explorerssuite.option.dayColor": "Day Color",
+  "text.autoconfig.explorerssuite.option.nightColor": "Night Color",
+  "text.autoconfig.explorerssuite.option.campfiresPlaceUnlit.@Tooltip": "Campfires Place Unlit",
+  "text.autoconfig.explorerssuite.option.campfiresHealPlayers.@Tooltip": "Campfires Heal Players",
+  "text.autoconfig.explorerssuite.option.campfiresHealPassives.@Tooltip": "Campfires Heal Passives",
+  "text.autoconfig.explorerssuite.option.dropLadders.@Tooltip": "Placing a ladder on a ladder places a ladder below the previously placed ladder",
+  "text.autoconfig.explorerssuite.option.pigsDropTallow.@Tooltip": "Pigs Drop Tallow (Restart required)",
+  "text.autoconfig.explorerssuite.option.dayColor.@Tooltip": "Color of the clock HUD during the day",
+  "text.autoconfig.explorerssuite.option.nightColor.@Tooltip": "Color of the clock HUD during the night"
+}
