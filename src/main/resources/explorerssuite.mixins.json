@@ -8,7 +8,6 @@
     "BlockItemMixin",
     "BrewingStandRegistryMixin",
     "CampfireMixin",
-    "ItemAccessor",
     "LitCampfireMixin"
   ],
   "client": [
