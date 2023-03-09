@@ -4,11 +4,12 @@ import com.random.explorerssuite.ExplorersSuite;
 import com.random.explorerssuite.events.StripLogCallback;
 import net.fabricmc.fabric.api.event.player.UseBlockCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
-import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
-import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
+import net.fabricmc.fabric.api.loot.v2.FabricLootPoolBuilder;
+import net.fabricmc.fabric.api.loot.v2.LootTableEvents;
 import net.minecraft.block.*;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.*;
+import net.minecraft.loot.LootPool;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.BinomialLootNumberProvider;
@@ -30,12 +31,12 @@ public class EventListeners {
 
     //More special methods
     public static void injectLoot() {
-        LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
-            if (PIG_LOOT_TABLE.equals(id)) {
-                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+        LootTableEvents.MODIFY.register((resourceManager, lootManager, id, supplier, setter) -> {
+            if (PIG_LOOT_TABLE.equals(id) && setter.isBuiltin()) {
+                LootPool.Builder poolBuilder = LootPool.builder()
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .withFunction(SetCountLootFunction.builder(BinomialLootNumberProvider.create(3, 0.75f)).build())
-                        .withEntry(ItemEntry.builder(ExplorersSuite.TALLOW).build());
+                        .apply(SetCountLootFunction.builder(BinomialLootNumberProvider.create(3, 0.75f)).build())
+                        .with(ItemEntry.builder(ExplorersSuite.TALLOW).build());
 
                 supplier.pool(poolBuilder);
             }

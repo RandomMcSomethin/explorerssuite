@@ -1,6 +1,7 @@
 plugins {
 	id 'fabric-loom' version '0.12-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.+"
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -24,10 +25,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modApi("me.shedaniel.cloth:cloth-config-fabric:5.1.40") {
+	modApi("me.shedaniel.cloth:cloth-config-fabric:7.0.65") {
 		exclude(group: "net.fabricmc.fabric-api")
 	}
-	modImplementation "com.terraformersmc:modmenu:2.0.14"
+	modImplementation "com.terraformersmc:modmenu:4.0.0"
 }
 
 processResources {
@@ -70,5 +71,20 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+	}
+}
+
+modrinth {
+	token = System.getenv("MODRINTH_TOKEN") // This is the default. Remember to have the MODRINTH_TOKEN environment variable set or else this will fail, or set it to whatever you want - just make sure it stays private!
+	projectId = "uNvEb4uV"
+	versionType = "release" // This is the default -- can also be `beta` or `alpha`
+	uploadFile = jar // With Loom, this MUST be set to `remapJar` instead of `jar`!
+	gameVersions = ["1.19"] // Must be an array, even with only one version
+	loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
+	dependencies { // A special DSL for creating dependencies
+		// scope.type
+		// The scope can be `required`, `optional`, or `incompatible`
+		// The type can either be `project` or `version`
+		required.project "P7dR8mSH" // Creates a new required dependency on Fabric API
 	}
 }

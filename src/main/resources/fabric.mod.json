@@ -9,8 +9,8 @@
     "RandomMcSomethin"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://randommcsomethin.github.io/random.github.io/",
+    "sources": "https://github.com/RandomMcSomethin/explorerssuite"
   },
 
   "license": "MIT",
@@ -19,14 +19,14 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.random.explorerssuite.ExplorersSuite"
+      "io.github.randommcsomethin.explorerssuite.ExplorersSuite"
     ],
     "modmenu": [
-      "com.random.explorerssuite.config.ModMenuIntegration"
+      "io.github.randommcsomethin.explorerssuite.config.ModMenuIntegration"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "explorerssuite.mixins.json"
   ],
 
   "depends": {

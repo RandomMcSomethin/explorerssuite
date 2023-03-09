@@ -48,11 +48,13 @@
   "text.autoconfig.explorerssuite.option.pigsDropTallow": "Pigs Drop Tallow",
   "text.autoconfig.explorerssuite.option.dayColor": "Day Color",
   "text.autoconfig.explorerssuite.option.nightColor": "Night Color",
+  "text.autoconfig.explorerssuite.option.twelveHourFormat": "12 Hour Format",
   "text.autoconfig.explorerssuite.option.campfiresPlaceUnlit.@Tooltip": "Campfires Place Unlit",
   "text.autoconfig.explorerssuite.option.campfiresHealPlayers.@Tooltip": "Campfires Heal Players",
   "text.autoconfig.explorerssuite.option.campfiresHealPassives.@Tooltip": "Campfires Heal Passives",
   "text.autoconfig.explorerssuite.option.dropLadders.@Tooltip": "Placing a ladder on a ladder places a ladder below the previously placed ladder",
   "text.autoconfig.explorerssuite.option.pigsDropTallow.@Tooltip": "Pigs Drop Tallow (Restart required)",
   "text.autoconfig.explorerssuite.option.dayColor.@Tooltip": "Color of the clock HUD during the day",
-  "text.autoconfig.explorerssuite.option.nightColor.@Tooltip": "Color of the clock HUD during the night"
+  "text.autoconfig.explorerssuite.option.nightColor.@Tooltip": "Color of the clock HUD during the night",
+  "text.autoconfig.explorerssuite.option.twelveHourFormat.@Tooltip": "Time format of the clock HUD"
 }
