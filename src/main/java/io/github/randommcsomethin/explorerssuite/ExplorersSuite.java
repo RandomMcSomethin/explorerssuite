@@ -12,6 +12,7 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.serializer.GsonConfigSerializer;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
 import net.minecraft.block.Block;
@@ -25,6 +26,7 @@ import net.minecraft.potion.Potions;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.tag.TagKey;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -88,6 +90,22 @@ public class ExplorersSuite implements ModInitializer {
 			})
 			.build();
 	*/
+
+	ItemGroup EXPLORERS_SUITE_TAB = FabricItemGroup.builder(new Identifier("explorerssuite", "explorers_suite"))
+			.displayName(Text.literal("Explorer's Suite"))
+			.icon(() -> new ItemStack(Items.SWEET_BERRIES))
+			.entries((enabledFeatures, entries, operatorEnabled) -> {
+				entries.add(Items.SWEET_BERRIES);
+				entries.add(Blocks.SWEET_BERRY_BUSH);
+				entries.add(Items.GLOW_BERRIES);
+				entries.add(Blocks.CAVE_VINES);
+				entries.add(INCENSED_CANDLE);
+				entries.add(INFERNAL_CANDLE);
+				entries.add(FIRE_STARTER);
+				entries.add(TALLOW);
+			})
+			.build();
+
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
